@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Trading page</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        #nav-wrap {
+            position: relative;
+            width: 100%;
+            height: 75px;
+            background-color: #30344f;
+            font-family: Poppins;
+        }
+
+        body {
+            background: #141625;
+            font-family: Poppins;
+        }
+
+        #dashboard {
+            position: absolute;
+            width: 10.2%;
+            height: 52.7%;
+            left: 18.2%;
+            top: 30.1%;
+            bottom: 17.2%;
+            right: 71.6%;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #rules {
+            position: absolute;
+            width: 5.2%;
+            height: 52.7%;
+            left: 38%;
+            top: 30.1%;
+            bottom: 17.2%;
+            right: 56.8%;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #trade {
+            position: absolute;
+            width: 7.7%;
+            height: 52.7%;
+            left: 53%;
+            top: 30.1%;
+            bottom: 17.2%;
+            right: 39.3%;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #leader {
+            position: absolute;
+            width: 11.8%;
+            height: 52.7%;
+            left: 70%;
+            top: 30.1%;
+            bottom: 17.2%;
+            right: 18.2%;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #menu1 {
+            position: absolute;
+            width: 35px;
+            height: 5px;
+            background-color: #ffffff;
+            margin: 6px 0;
+            left: 95.9%;
+            top: 32.8%;
+            right: 1.5%;
+            bottom: 67.2%;
+        }
+
+        #menu2 {
+            position: absolute;
+            width: 35px;
+            height: 5px;
+            background-color: #ffffff;
+            margin: 6px 0;
+            left: 95.9%;
+            top: 53.2%;
+            right: 1.5%;
+            bottom: 46.8%;
+        }
+
+        #menu3 {
+            position: absolute;
+            width: 35px;
+            height: 5px;
+            background-color: #ffffff;
+            margin: 6px 0;
+            left: 95.9%;
+            top: 73.7%;
+            right: 1.5%;
+            bottom: 26.3%;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 66.7%;
+            height: 82.8%;
+            padding-left: 1.4%;
+            right: 31.9%;
+            bottom: 4.8%;
+            padding-top: 2.1%;
+            border-radius: 25px;
+            font-family: Poppins;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 26.2%;
+            height: 82.8%;
+            left: 71%;
+            right: 2.8%;
+            padding-top: 2.1%;
+            bottom: 4.8%;
+            border-radius: 25px;
+            padding-left: 2.9%;
+            font-family: Poppins;
+        }
+
+        .card1 {
+            background-color: #30344f;
+            color: #ffffff;
+            font-family: Poppins;
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .card2 {
+            background-color: #30344f;
+            color: #ffffff;
+            font-family: Poppins;
+            font-family: Poppins;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #customers {
+            font-family: Poppins;
+            border-collapse: collapse;
+        }
+
+        #customers td {
+            border: 0px;
+            line-height: 2.2%;
+        }
+
+        #customers th {
+            text-align: center;
+            color: white;
+        }
+
+        .title1 {
+            width: 9.4%;
+            height: 4.6%;
+            font-family: Poppins;
+            left: 79.5%;
+            top: 16.5%;
+            padding-right: 11.4%;
+            bottom: 79%;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-wrap">
+        <div id="dashboard"><a href="#" style="color:#ffffff">Dashboard</a></div>
+        <div id="rules"><a href="#" style="color:#ffffff">Rules</a></div>
+        <div id="trade"><a href="#" style="color:#ffffff">Trading</a></div>
+        <div id="leader"><a href="#" style="color:#ffffff">Leaderboard</a></div>
+        <a href="#">
+            <div id="menu1"></div>
+            <div id="menu2"></div>
+            <div id="menu3"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card1">
+                <table id="customers">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Stocks Available</th>
+                        <th>Buy</th>
+                    </tr>
+                    <tr>
+                        <th>Team1</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team2</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team3</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team4</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team5</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team6</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team7</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team8</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team9</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                    <tr>
+                        <th>Team10</th>
+                        <th>$100</th>
+                        <th>100</th>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card2">
+                CHECKOUT
+            </div>
+        </div>
+    </div>
+</body>
