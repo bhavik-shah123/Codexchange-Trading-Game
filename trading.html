@@ -2,124 +2,26 @@
 
 <head>
     <title>Trading page</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-        #nav-wrap {
-            position: relative;
-            width: 100%;
-            height: 75px;
-            background-color: #30344f;
-            font-family: Poppins;
-        }
-
         body {
             background: #141625;
             font-family: Poppins;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
 
-        #dashboard {
-            position: absolute;
-            width: 10.2%;
-            height: 52.7%;
-            left: 18.2%;
-            top: 30.1%;
-            bottom: 17.2%;
-            right: 71.6%;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.51;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
-        }
-
-        #rules {
-            position: absolute;
-            width: 5.2%;
-            height: 52.7%;
-            left: 38%;
-            top: 30.1%;
-            bottom: 17.2%;
-            right: 56.8%;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.51;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
-        }
-
-        #trade {
-            position: absolute;
-            width: 7.7%;
-            height: 52.7%;
-            left: 53%;
-            top: 30.1%;
-            bottom: 17.2%;
-            right: 39.3%;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.51;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
-        }
-
-        #leader {
-            position: absolute;
-            width: 11.8%;
-            height: 52.7%;
-            left: 70%;
-            top: 30.1%;
-            bottom: 17.2%;
-            right: 18.2%;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.51;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
-        }
-
-        #menu1 {
-            position: absolute;
-            width: 35px;
-            height: 5px;
-            background-color: #ffffff;
-            margin: 6px 0;
-            left: 95.9%;
-            top: 32.8%;
-            right: 1.5%;
-            bottom: 67.2%;
-        }
-
-        #menu2 {
-            position: absolute;
-            width: 35px;
-            height: 5px;
-            background-color: #ffffff;
-            margin: 6px 0;
-            left: 95.9%;
-            top: 53.2%;
-            right: 1.5%;
-            bottom: 46.8%;
-        }
-
-        #menu3 {
-            position: absolute;
-            width: 35px;
-            height: 5px;
-            background-color: #ffffff;
-            margin: 6px 0;
-            left: 95.9%;
-            top: 73.7%;
-            right: 1.5%;
-            bottom: 26.3%;
+        #main {
+            background-color: #30344f;
+            display: flex;
+            margin: 0;
+            font-size: 25px;
+            height: 8.7%;
+            justify-content: space-between;
+            padding: 22px;
         }
 
         .leftcolumn {
@@ -134,50 +36,86 @@
             font-family: Poppins;
         }
 
-        .rightcolumn {
-            float: left;
-            width: 26.2%;
-            height: 82.8%;
-            left: 71%;
-            right: 2.8%;
-            padding-top: 2.1%;
-            bottom: 4.8%;
-            border-radius: 25px;
-            padding-left: 2.9%;
-            font-family: Poppins;
-        }
-
         .card1 {
+            border-radius: 25px;
             background-color: #30344f;
             color: #ffffff;
             font-family: Poppins;
             font-family: Poppins;
-            font-weight: normal;
+            font-weight: 400;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.51;
             letter-spacing: normal;
             text-align: left;
             color: #ffffff;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 31%;
+            background-color: #141625;
+            padding-left: 3.2%;
+            border-radius: 25px;
         }
 
         .card2 {
+            border-radius: 25px;
             background-color: #30344f;
             color: #ffffff;
             font-family: Poppins;
             font-family: Poppins;
-            font-weight: normal;
+            font-weight: 400;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.51;
             letter-spacing: normal;
             text-align: left;
             color: #ffffff;
+        }
+
+        .card3 {
+            background-color: #30344f;
+            color: #ffffff;
+            font-family: Poppins;
+            font-family: Poppins;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #buy {
+            width: 70px;
+            height: 1em;
+        }
+
+        input,
+        select,
+        textarea {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #b2 {
+            border-color: red;
+            border-radius: 25px;
+            height: 115px;
+            font-weight: 500;
+            font-size: 25px;
+            font-family: Poppins;
+            color: red;
+            background: transparent;
+            width: 100%;
         }
 
         #customers {
             font-family: Poppins;
             border-collapse: collapse;
+            font-weight: 400;
         }
 
         #customers td {
@@ -188,6 +126,25 @@
         #customers th {
             text-align: center;
             color: white;
+        }
+
+        #merger {
+            margin-bottom: 110px;
+            border: 0px;
+        }
+
+        #merger th {
+            text-align: center;
+        }
+
+        #ex {
+            border-radius: 5px;
+            border: none;
+            color: #30344f;
+            font-weight: 600;
+            font-family: Poppins;
+            background-color: #21e6c1;
+            height: 1.7rem;
         }
 
         .title1 {
@@ -208,16 +165,13 @@
 </head>
 
 <body>
-    <div id="nav-wrap">
-        <div id="dashboard"><a href="#" style="color:#ffffff">Dashboard</a></div>
-        <div id="rules"><a href="#" style="color:#ffffff">Rules</a></div>
-        <div id="trade"><a href="#" style="color:#ffffff">Trading</a></div>
-        <div id="leader"><a href="#" style="color:#ffffff">Leaderboard</a></div>
-        <a href="#">
-            <div id="menu1"></div>
-            <div id="menu2"></div>
-            <div id="menu3"></div>
-        </a>
+    <div id="main">
+        <div></div>
+        <div style="color:white" onClick='display()' class="nb">Dashboard</div>
+        <div style="color:#21e6c1;font-weight: 800">Trading</div>
+        <div style="color:white">Rules</div>
+        <div style="color:white">Leaderboard</div>
+        <div id="hamburger"><a href=""><img src="HamburgerMenu.png" height="30px"></a></div>
     </div>
 
     <div class="row">
@@ -234,69 +188,117 @@
                         <th>Team1</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team2</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team3</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team4</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team5</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team6</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team7</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team8</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team9</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                     <tr>
                         <th>Team10</th>
                         <th>$100</th>
                         <th>100</th>
-
+                        <th id="buy"><input type="text"></input></th>
+                        <th><button id="ex">Execute</button></th>
                     </tr>
                 </table>
-
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card2">
-                CHECKOUT
+                <p style="font-family: Poppins;font-size: 2em;margin-left:17.9%;margin-bottom:15px;">Transaction
+                    History
+                </p>
+                <div class="fakeimg" style="padding-left:41%;font-size: 1.5em;padding-bottom:13px;">Round 1
+                </div>
+                <div style="font-size: 1.5em;line-height:1.51;">
+                    <center>
+                        Team1 - 1 x Rs 500<br>
+                        Team2 - 1 x Rs 500<br>
+                        Team3 - 1 x Rs 500<br>
+                        Team4 - 1 x Rs 500<br>
+                        Team5 - 1 x Rs 500<br>
+                        Team6 - 1 x Rs 500<br>
+                        Team7 - 1 x Rs 500<br>
+                        Team8 - 1 x Rs 500<br>
+                        Team9 - 1 x Rs 500<br>
+                        Team10 - 1 x Rs 500<br>
+                        <p style="color:#21e6c1">Round Total - Rs. 5000</p>
+                    </center>
+                </div>
+            </div>
+            <div class="card3" style="border-radius: 25px;">
+                <center>
+                    <h5>Merger Request</h5>
+                </center>
+                <table id="merger">
+                    <tr>
+                        <th>Company 1</th>
+                        <th style="color:red;">Clock</th>
+                        <th><button id="ex">Execute</button></th>
+                    </tr>
+                    <tr>
+                        <th>Company 1</th>
+                        <th style="color:red;">Clock</th>
+                        <th><button id="ex">Execute</button></th>
+                    </tr>
+                </table>
+            </div>
+            <div id="card4">
+                <button id="b2">Send Merger Request</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,100 @@
+body{
+    height: vh;
+    width: vw;
+    background-color: #141625;
+    margin: 0;
+}
+
+.dividor{
+    width: 2px;
+    height: 500px;
+    background-color: #21e6c1;
+    top: 17.7%;
+    left: calc(50%);
+    right: calc(50%);
+    bottom: 17.7;
+    position: absolute;;
+}
+
+.pic{
+    width: calc(40%);
+    height: calc(40% );
+    top: calc(23%);
+    left: calc(9%);
+    position: absolute;
+}
+
+.codeX{
+    width: 100%;
+    height:100%;
+}
+
+.cred{
+    width: calc(21%);
+    height: calc(60%);
+    left: calc(56%);
+    top: calc(20%);
+    background-color: #141625;
+    position: absolute;
+}
+
+.cred h1{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: azure;
+}
+
+.cred input[type="text"], input[type="password"]{
+    width:100%;
+    margin-bottom: 24px;
+    background-color: #141625;
+}
+
+.cred input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid azure;
+    outline: none;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: azure;
+}
+
+.cred input[type="submit"]{
+    width:28%;
+    height: 36px;
+    margin-top: 20px;
+    background-color: #21e6c1;
+    border-radius: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #141625;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.cred input[type="submit"]{
+    margin-left: 72%;
+}

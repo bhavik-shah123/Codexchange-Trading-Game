@@ -1,278 +1,292 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>CodeXchange</title>
-<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-<style> 
-    html{
-        background-color: #141625;
-        
+  <title>CodeXchange</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      background-color: #141625;
+
     }
 
-    b{
-        font-family: poppins;
+    b {
+      font-family: poppins;
     }
-    body { height: 100%; 
-        width: 100%; 
-        margin: 0; 
-        padding: 0;
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
+
     #main {
-     
-  background-color:#30344f;
-  display: flex;
-    margin: 0;
-    height: 43px; 
-  justify-content: space-between;
-  padding:22px;
-}
+      background-color: #30344f;
+      display: flex;
+      margin: 0;
+      height: 43px;
+      justify-content: space-between;
+      padding: 22px;
+    }
+
     .flex-container {
-  display: flex;
-  flex-wrap: nowrap;        
- /*background-color: #141625;*/
-        background-color: #141625;
-  height: 200%;
-        padding:20px;
+      display: flex;
+      flex-wrap: nowrap;
+      /*background-color: #141625;*/
+      background-color: #141625;
+      height: 200%;
+      padding: 20px;
     }
 
-.list{
-  background-color: #30344f;
-  width:220% ;   
-  padding-left: 1.4%;
-  margin: 10px;
-  line-height: 75px;
-  font-size: 30px;
-    border-radius: 10px;
-  overflow: auto;
-    
-}
-table {
-  font-family: poppins;
-  border-collapse: collapse;
-  width: 100%;
-    
-}
+    .list {
+      background-color: #30344f;
+      width: 220%;
+      padding-left: 1.4%;
+      margin: 10px;
+      line-height: 75px;
+      font-size: 30px;
+      border-radius: 10px;
+      overflow: auto;
 
-td, th {
-       
-  
-  text-align: left;
-  padding: px;
-  color: #ffffff;
-  font-family: poppins;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-    
     }
-    
-.Graph{
-  width: 100%;
-  height:82.5%;     
-  padding-left: 1.4%;
-  margin: 10px;
-  line-height: 75px;
-  font-size: 30px;
-  color: aliceblue;
-    overflow: auto;
-  
-}
-#hamburger{
- 
-}
-    #trow{
-        font-size: 24px;
-        
-    }
-.graph{
-  background-color: #30344f;
-  width:100% ;
-  height:20%;     
-  padding-left: 1%;
-  line-height: 75px;
-  font-size: 35px;
-  border-radius: 10px;
-  justify-content: center;
-    align-self: center;
-    display: flex;
-    widows: 100%;
-    height: 20%;
-    text-align: center;
-    flex-direction: column;
-    font-weight: 800;
-    font-family: poppins;
-    }
-#main div {
-    font-size:1.65em;
-    padding:5px;
-    font-family: poppins
-}
-    .Your_Pos{
-  background-color: #30344f;
-  width:100% ;
-  height:20%;     
-  margin-top: 20px;
-  padding-left: 5px;
-  line-height: 75px;
-  font-size: 30px;
-          border-radius: 10px;
-        overflow: auto;
-    }
-    .t2{
 
-    font-size: 30px;
+    table {
+      font-family: poppins;
+      border-collapse: collapse;
+      width: 100%;
+
     }
-    .t1{
-        font-size: 20px;
-        padding: 0px;
+
+    td,
+    th {
+
+
+      text-align: left;
+      padding: px;
+      color: #ffffff;
+      font-family: poppins;
+      font-weight: 100;
+      font-stretch: normal;
+      font-style: normal;
+
     }
+
+    .Graph {
+      width: 100%;
+      height: 82.5%;
+      padding-left: 1.4%;
+      margin: 10px;
+      line-height: 75px;
+      font-size: 30px;
+      color: aliceblue;
+      overflow: auto;
+
+    }
+
+    #hamburger {}
+
+    #trow {
+      font-size: 24px;
+
+    }
+
+    .graph {
+      background-color: #30344f;
+      width: 100%;
+      height: 20%;
+      padding-left: 1%;
+      line-height: 75px;
+      font-size: 35px;
+      border-radius: 10px;
+      justify-content: center;
+      align-self: center;
+      display: flex;
+      widows: 100%;
+      height: 20%;
+      text-align: center;
+      flex-direction: column;
+      font-weight: 800;
+      font-family: poppins;
+    }
+
+    #main div {
+      font-size: 1.65em;
+      padding: 5px;
+      font-family: poppins
+    }
+
+    .Your_Pos {
+      background-color: #30344f;
+      width: 100%;
+      height: 20%;
+      margin-top: 20px;
+      padding-left: 5px;
+      line-height: 75px;
+      font-size: 30px;
+      border-radius: 10px;
+      overflow: auto;
+    }
+
+    .t2 {
+
+      font-size: 30px;
+    }
+
+    .t1 {
+      font-size: 20px;
+      padding: 0px;
+    }
+
     .Line-11 {
-  width: 50px;
-  height: 0;
-  border: solid 5px #ffffff;
-}
-</style>
-</head>
-<body style="margin: 0;height: 100%;" onLoad="setSize()">
-<script>
-	function display(){
-    	alert("working");
+      width: 50px;
+      height: 0;
+      border: solid 5px #ffffff;
     }
-    </script>
-<div id="main">
-  <div></div>
-  <div style="color:white" onClick='display()' class="nb">Dashboard</div>
+  </style>
+</head>
+
+<body style="margin: 0;height: 100%;" onLoad="setSize()">
+  <script>
+    function display() {
+      alert("working");
+    }
+  </script>
+  <div id="main">
+    <div></div>
+    <div style="color:white" onClick='display()' class="nb">Dashboard</div>
     <div style="color:#ffffff">Trading</div>
-  <div style="color:white">Rules</div>
-  <div style="color:#21e6c1;font-weight: 800">Leaderboard</div>
+    <div style="color:white">Rules</div>
+    <div style="color:#21e6c1;font-weight: 800">Leaderboard</div>
     <div id="hamburger"><a href=""><img src="HamburgerMenu.png" height="30px"></a></div>
-</div>
-<div class="flex-container">
-  <div class="list" id="Board">
-    <table class="t2">
+  </div>
+  <div class="flex-container">
+    <div class="list" id="Board">
+      <table class="t2">
 
-  <tr>
-    <th>Position</th>
-    <th>Team Name</th>
-    <th>Initial Value</th>
-    <th>Current Value</th>
-   
-  </tr>
-    <tr id="trow">
-        <td>1</td>
-        <td>Team 1</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>2</td>
-        <td>Team 2</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>3</td>
-        <td>Team 3</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>4</td>
-        <td>Team 4</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>5</td>
-        <td>Team 5</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>6</td>
-        <td>Team 6</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>7</td>
-        <td>Team 7</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>8</td>
-        <td>Team 8</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>9</td>
-        <td>Team 9</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
-        <tr id="trow">
-        <td>10</td>
-        <td>Team 10</td>
-        <td>$500</td>
-        <td>$500</td>
-        
-    </tr>
+        <tr>
+          <th>Position</th>
+          <th>Team Name</th>
+          <th>Initial Value</th>
+          <th>Current Value</th>
 
-</table>
-    
+        </tr>
+        <tr id="trow">
+          <td>1</td>
+          <td>Team 1</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>2</td>
+          <td>Team 2</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>3</td>
+          <td>Team 3</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>4</td>
+          <td>Team 4</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>5</td>
+          <td>Team 5</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>6</td>
+          <td>Team 6</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>7</td>
+          <td>Team 7</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>8</td>
+          <td>Team 8</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>9</td>
+          <td>Team 9</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+        <tr id="trow">
+          <td>10</td>
+          <td>Team 10</td>
+          <td>$500</td>
+          <td>$500</td>
+
+        </tr>
+
+      </table>
+
     </div>
-  <div class="Graph" >
-    <div class="graph" id="graph_block">GRAPH</div>
+    <div class="Graph">
+      <div class="graph" id="graph_block">GRAPH</div>
       <div class="Your_Pos" id="graph_block_low">
-          <b>Your Position</b>
-          <table class="t1">
-            <tr >
-                <td>Round 1st - </td>
-                <td>Round 2nd - </td>
-                
-            </tr>
-            <tr>
-                <td>Round 3rd - </td>
-                <td>Round 4th - </td>
-                
-            </tr>
-            <tr>
-                <td>Round 5th - </td>
-                <td>Round 6th - </td>
-                
-            </tr>  
-          
-          
+        <b>Your Position</b>
+        <table class="t1">
+          <tr>
+            <td>Round 1st - </td>
+            <td>Round 2nd - </td>
+
+          </tr>
+          <tr>
+            <td>Round 3rd - </td>
+            <td>Round 4th - </td>
+
+          </tr>
+          <tr>
+            <td>Round 5th - </td>
+            <td>Round 6th - </td>
+
+          </tr>
+
+
         </table>
-      
-      
-      
-      
+
+
+
+
       </div>
     </div>
-    </div>
-    <script>
-        var w = window.innerWidth;
-        var h = window.innerHeight-40;
-        console.log("Running"+h);
-        height_Graph=(62/100)*h;
-        height_Graph_low=(35/100)*h;
-        function setSize(){
-            document.getElementById("Board").style.height =h+"px";
-             document.getElementById("graph_block").style.height =height_Graph+"px";
-            document.getElementById("graph_block_low").style.height =height_Graph_low+"px";
-        }
-    </script>
+  </div>
+  <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight - 40;
+    console.log("Running" + h);
+    height_Graph = (62 / 100) * h;
+    height_Graph_low = (35 / 100) * h;
+    function setSize() {
+      document.getElementById("Board").style.height = h + "px";
+      document.getElementById("graph_block").style.height = height_Graph + "px";
+      document.getElementById("graph_block_low").style.height = height_Graph_low + "px";
+    }
+  </script>
 </body>
+
 </html>
