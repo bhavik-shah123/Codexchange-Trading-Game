@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            background: #141625;
+            font-family: Poppins;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            background-color: #30344f;
+            display: flex;
+            margin: 0;
+            font-size: 25px;
+            height: 8.7%;
+            justify-content: space-between;
+            padding: 22px;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 66.7%;
+            height: 82.8%;
+            padding-left: 1.4%;
+            right: 31.9%;
+            bottom: 4.8%;
+            padding-top: 2.1%;
+            border-radius: 25px;
+            font-family: Poppins;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 31%;
+            background-color: #141625;
+            padding-left: 3.2%;
+            border-radius: 25px;
+        }
+
+        .balance {
+            float: left;
+            height: 12.4%;
+            width: 50%;
+            margin-right: 2.9%;
+            border-radius: 25px;
+            background-color: #30344f;
+        }
+
+        #head {
+            font-family: Poppins;
+            color: #ffffff;
+            margin-top: 2%;
+            font-size: 25px;
+            margin-bottom: 0%;
+            padding-left: 4.1%;
+        }
+
+        #amt {
+            font-family: Poppins;
+            color: #21e6c1;
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 0%;
+            padding-left: 45.6%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+        }
+
+        .curr_round {
+            float: left;
+            width: 45%;
+            height: 14.4%;
+            border-radius: 25px;
+            background-color: #30344f;
+        }
+
+        #chead {
+            font-family: Poppins;
+            float: left;
+            width: 45%;
+            height: 39.4%;
+            color: #ffffff;
+            font-size: 25px;
+            margin-left: 7%;
+            margin-top: 6%;
+            margin-bottom: 0%;
+        }
+
+        #cround {
+            font-family: Poppins;
+            float: left;
+            width: 20%;
+            height: 65.8%;
+            color: #21e6c1;
+            font-size: 35px;
+            margin-top: 7.5%;
+            font-weight: bold;
+            margin-left: 20%;
+            margin-bottom: 3%;
+        }
+
+        #lower_left {
+            margin-top: 44%;
+            width: 100%;
+            height: 62%;
+            background-color: #30344f;
+            color: #ffffff;
+        }
+
+        #mystock {
+            font-size: 20px;
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+
+        #upper_right {
+            width: 100%;
+            height: 68%;
+            border-radius: 25px;
+            background-color: #30344f;
+            margin-top: 9%;
+            padding-left: 2%;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        #lower_right {
+            width: 100%;
+            height: 30%;
+            border-radius: 25px;
+            background-color: #30344f;
+        }
+
+        #pos {
+            color: #ffffff;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 5%;
+            margin-bottom: 0%;
+        }
+
+        #num {
+            color: #21e6c1;
+            font-size: 72px;
+            font-weight: bold;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        #rou {
+            color: #ffffff;
+            margin-top: 0%;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div></div>
+        <div style="color:#21e6c1" onClick='display()' class="nb">Dashboard</div>
+        <div style="color:#ffffff">Trading</div>
+        <div style="color:white">Rules</div>
+        <div style="color:#ffffff;font-weight: 800">Leaderboard</div>
+        <div id="hamburger"><a href=""><img src="HamburgerMenu.png" height="30px"></a></div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div id="upper_left">
+                <div class="balance">
+                    <p id="head">Current Balance</p>
+                    <p id="amt">Rs. 5555555</p>
+                </div>
+                <div class="curr_round">
+                    <p id="chead">Current Round</p>
+                    <p id="cround">2nd</p>
+                </div>
+            </div>
+            <div id="lower_left">
+                <p id="mystock">My Stocks</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div id="upper_right">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <div id="lower_right">
+                <p id="pos">Position</p>
+                <center>
+                    <p id="num">1</p>
+                    <p id="rou">Round 2</p>
+                </center>
+            </div>
+        </div>
+</body>
+
+</html>
