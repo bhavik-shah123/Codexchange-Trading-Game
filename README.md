@@ -1,2 +1,3 @@
 # codexchange
-Web application for stock market simulator game played at VIT-AP University
+Website developed for a one of it's kind virtual stock exchange game, Codexhange '19 at VIT-AP University where participants will compete with each other to earn maximum profits for their company and learn the pressure of the corporate world.
+Developed by Codexchange Technical Team lead by Bhavik Shah.
