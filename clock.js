@@ -4,7 +4,7 @@ window.onpopstate = function () {
 };
 var name = sessionStorage.getItem("user");
 document.getElementById("team").innerHTML = name;
-var countDownDate = new Date("Dec 22, 2019 11:00:00").getTime();
+var countDownDate = new Date("Nov 7, 2019 00:00:00").getTime();
 var x = setInterval(TimeRemaing, 1000);
 var diff = 0;
 function TimeRemaing() {
@@ -45,7 +45,7 @@ function clicked() {
 	if (diff > 0)
 		window.alert("Session Error");
 	else {
-		location.replace("https://www.google.com");
+		location.replace("first_rules.html");
 	}
 
 }

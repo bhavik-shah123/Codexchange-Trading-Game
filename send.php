@@ -2,10 +2,10 @@
 <body>
 <?php
 
-function createPassword(String $user)
+function createPassword(String $loginid)
 {
    $check="";
-   $msg = hash("sha1",$user."22DEC2019");
+   $msg = hash("sha1",$loginid."22DEC2019");
    for($i = 0 ; $i <10 ; $i++)
    {
 	   $cut_msg = substr($msg,$i,4);
